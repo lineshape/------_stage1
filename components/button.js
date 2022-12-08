@@ -10,15 +10,23 @@ class Button {
 
   show() {
     if (this.over()) {
-      fill(255, 0, 0);
+      fill(220);
     } else {
       fill(255);
     }
+
     rect(this.x, this.y, this.w, this.h);
 
-    // fill(0);
-    // textSize(18);
-    // text(this.title, this.x + this.w / 2, this.y + this.h / 2);
+    fill(0);
+    textSize(18);
+    text('클릭', this.x + this.w / 2 - 18, this.y + this.h / 2 + 5);
+
+    textSize(12);
+    text(
+      '주의! 버튼은 한번만 누르세요! 오류 생겨요 ㅠㅠ',
+      this.x,
+      this.y + this.h + 20
+    );
   }
 
   over() {
@@ -48,8 +56,4 @@ class Button {
     this.isClicked = false;
     return false;
   }
-
-  // setTitle(t) {
-  //   this.title = t;
-  // }
 }
