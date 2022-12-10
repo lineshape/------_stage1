@@ -20,13 +20,6 @@ class Button {
     fill(0);
     textSize(18);
     text('클릭', this.x + this.w / 2 - 18, this.y + this.h / 2 + 5);
-
-    textSize(12);
-    text(
-      '주의! 버튼은 한번만 누르세요! 오류 생겨요 ㅠㅠ',
-      this.x,
-      this.y + this.h + 20
-    );
   }
 
   over() {
